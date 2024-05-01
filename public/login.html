@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Sign Up</title>
+  <style>
+    
+    body {
+            font-family: Arial, sans-serif;
+            background-image: url("banner1.png");
+            color: white;
+            background-repeat: no-repeat;
+            background-size: cover;
+            height: 100vh;
+            background-position: center;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+        }
+        form {
+            background-color: rgba(242, 242, 242, 0.4);
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            padding: 20px;
+            max-width: 300px;
+            width: 100%;
+        }
+        h2 {
+            margin-top: 0;
+            font-weight: bold;
+        }
+        input[type="email"],
+        input[type="password"] {
+            width: calc(100% - 20px);
+            padding: 10px;
+            margin: 8px 0;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+            box-sizing: border-box;
+        }
+        .error {
+            color: white;
+            font-size: 14px;
+            margin-top: 4px;
+            display: block;
+            text-align: left;
+        }
+        button[type="submit"] {
+            background-color: black;
+            color: white;
+            padding: 14px 20px;
+            margin: 8px 0;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+            width: calc(100% - 20px);
+            box-sizing: border-box;
+        }
+        button[type="submit"]:hover {
+            background-color: black;
+        }
+        a {
+            
+            margin-top: 10px;
+            text-decoration: none;
+            color: black;
+        }
+        a:hover {
+            color: black;
+        }
+</style>
+</head>
+
+<body>
+  <div>
+    <form action="/login" method="post" id="myForm" onsubmit="return validateForm()">
+      <h2>Login</h2>
+        <div>
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" placeholder="Email">
+            <span id="emailError" class="error"></span>
+        </div>
+        <div>
+            <label for="password">Password:</label>
+            <input type="password" id="password" name="password" placeholder="Password">
+            <span id="passwordError" class="error"></span>
+        </div>
+        <button type="submit">Login</button>
+        Dont have an account?<a href="form.html">Signup</a>
+  </form>
+  </div>
+  <script>
+    function validateForm() {
+            var email = document.getElementById('email').value;
+            var password = document.getElementById('password').value;
+            var emailError = document.getElementById('emailError');
+            var passwordError = document.getElementById('passwordError');
+            var valid = true;
+
+            emailError.textContent = '';
+            passwordError.textContent = '';
+
+            if (!email || !email.includes('@')) {
+                emailError.textContent = 'Please enter a valid email address';
+                valid = false;
+            }
+
+            if (!password || password.length < 4) {
+                passwordError.textContent = 'Password must be at least 4 characters long';
+                valid = false;
+            }
+
+            return valid;
+        }
+  </script>
+</body>
+
+</html>

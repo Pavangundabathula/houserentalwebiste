@@ -1,0 +1,388 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;700&display=swap');
+* {
+    margin: 0;
+}
+
+html,
+body {
+    height: 100%;
+    font-family: 'Poppins', sans-serif;
+    font-size: 16px;
+}
+
+body {
+    line-height: 1.5;
+    -webkit-font-smoothing: antialiased; 
+}
+
+img,
+picture,
+video,
+canvas,
+svg {
+    display: block;
+    max-width: 100%;
+}
+
+input,
+button,
+textarea,
+select {
+    font: inherit;
+}
+
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    overflow-wrap: break-word;
+}
+
+li {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+nav {
+    width: 100%;
+    max-width: 1980px;
+    position: absolute;
+    inset: 0 0 100% 0;
+}
+
+nav .container {
+    width: 100%;
+    margin: 0 auto;
+    height: 60px;
+    background-color:slategray;
+    border-bottom: 10px solid black;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo {
+    font-weight: 600;
+    font-size: 1.5rem;
+    color: white;
+    padding-left: 19px;
+}
+
+.nav-list {
+    flex-basis: 50%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.list-item {
+    color: white;
+    font-size: 1.2rem;
+    font-weight: 500;
+}
+
+.list-item:hover {
+    opacity: 0.8;
+}
+
+.contact {
+    background-color: #505050;
+    padding: 0.5rem 0.8rem;
+    border-radius: 5px;
+    color:white;
+}
+
+
+.mobile-menu{
+    display: none;
+}
+
+.header {
+    width: 100%;
+    max-width: 1980px;
+    background-image: url(banner.png);
+    height: 100vh;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    z-index: 2;
+
+}
+.header .container {
+    width: 90%;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 100%;
+}
+
+.header-info {
+    width: 90%;
+    margin-inline: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    height: 100%;
+    z-index: 2;
+
+}
+
+.header-headline {
+    font-size: 6rem;
+    text-align: center;
+    font-weight: 900;
+    line-height: 110%;
+    text-transform: capitalize;
+    color: white;
+    padding-block: 1rem;
+}
+
+.header-subtitle {
+    font-size: 1.5rem;
+    width: 60%;
+    text-align: center;
+    color: white;
+    text-transform: capitalize;
+    padding-bottom: 2rem;
+}
+.header1 {
+    width: 100%;
+    max-width: 1980px;
+    background-color: black;
+    height: 80vh;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    z-index: 2;
+
+}
+
+.header1 .container {
+    width: 90%;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 100%;
+}
+
+.header1-info {
+    width: 90%;
+    margin-inline: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    height: 100%;
+    z-index: 2;
+
+}
+
+.header1-headline {
+    font-size: 6rem;
+    text-align: center;
+    font-weight: 900;
+    line-height: 110%;
+    border: 10px solid white;
+    text-transform: capitalize;
+    color: white;
+    padding-block: 1rem;
+}
+
+.header1-subtitle {
+    font-size: 1.5rem;
+    width: 60%;
+    text-align: center;
+    color: white;
+    text-transform: capitalize;
+    padding-bottom: 2rem;
+}
+.header1 .container {
+    width: 90%;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 100%;
+}
+
+.header1-info {
+    width: 90%;
+    margin-inline: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    height: 100%;
+    z-index: 2;
+
+}
+
+.header1-headline {
+    font-size: 6rem;
+    text-align: center;
+    font-weight: 900;
+    line-height: 110%;
+    text-transform: capitalize;
+    color: white;
+    padding-block: 1rem;
+}
+
+.header1-subtitle {
+    font-size: 1.5rem;
+    width: 60%;
+    text-align: center;
+    color: white;
+    text-transform: capitalize;
+    padding-bottom: 2rem;
+}
+.cta {
+    width: 200px;
+    background-color: #505050;
+    color: #fff;
+    text-align: center;
+    padding: 0.8rem 1rem;
+    border-radius: 5px;
+    font-size: 2rem;
+}
+
+
+#product {
+    width: 100%;
+    max-width: 1980px;
+    padding-block: 4rem;
+}
+
+.product-info {
+    width: 80%;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    padding-bottom: 2rem;
+}
+
+.product-info .product-title {
+    font-size: 2.8rem;
+    font-weight: 500;
+    text-transform: capitalize;
+    color: #505050;
+    width: 70%;
+}
+
+.product-btn {
+    background-color: transparent;
+    color: #505050;
+    font-size: 1.5rem;
+    display: flex;
+    width: 20%;
+    justify-content: center;
+    align-items: center;
+    min-height: 20px;
+}
+
+.product-btn:hover {
+    color: #000;
+}
+
+#product .container {
+    width: 90%;
+    margin-inline: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 1rem;
+}
+
+.product-card {
+    flex-basis: 28%;
+    border-radius: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    flex-direction: column;
+    box-shadow: 0px 5px 10px rgba(80, 80, 80, 0.20);
+    padding-bottom: 1rem;
+    overflow: hidden;
+
+}
+
+.product-card:hover .product-img{
+    transform: scale(1.035);
+}
+
+.product-img {
+    flex-basis: 100%;
+    object-fit: cover;
+}
+
+.card-info {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    flex-direction: column;
+    width: 100%;
+    gap: 1rem;
+    padding-top: 0.5rem;
+}
+
+.card-info-content {
+    display: flex;
+    text-transform: uppercase;
+    min-height: 20px;
+    justify-self: center;
+    align-items: center;
+    gap: 0.5rem;
+    width: 90%;
+    margin-inline: auto;
+
+}
+
+.content {
+    flex-basis: 30%;
+    display: flex;
+    justify-content: start;
+    min-height: 20px;
+    align-items: center;
+}
+
+.content p {
+    font-size: 1rem;
+}
+
+.price {
+    display: flex;
+    justify-content: space-between;
+    width: 90%;
+    margin-inline: auto;
+    gap: 10px;
+
+}
+
+.price p {
+    font-size: 1.5rem;
+    flex-basis: 30%;
+
+}
+
+.booking-btn {
+    color: #fff;
+    background-color: #505050;
+    flex-basis: 50%;
+    padding: 0.5rem 0.5rem;
+    text-align: center;
+    font-size: 1rem;
+    border-radius: 5px;
+}
+* {
+    transition: none !important;
+}

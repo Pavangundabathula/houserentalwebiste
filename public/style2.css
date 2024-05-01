@@ -1,0 +1,113 @@
+.details-1 {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    background-color: #f9f9f9;
+    border-radius: 10px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  }
+  
+  .details-1 img {
+    width: 50%;
+    height: auto;
+    border-radius: 10px;
+  }
+  
+  .details-1 p {
+    width: 50%;
+    padding: 0 20px;
+  }
+  
+  .details-1 p b {
+    font-weight: bold;
+    color: #333;
+  }
+  
+  .details-1 p span {
+    display: block;
+    margin-bottom: 10px;
+  }
+  
+  .details-1 p .seller-details {
+    background-color: #555;
+    color: white;
+    padding: 5px 10px;
+    border-radius: 5px;
+    margin-top: 10px;
+  }
+
+  .details-1 p span {
+    margin-bottom: 10px;
+  }
+  
+  .details-1 p .seller-details {
+    background-color: #555;
+    color: white;
+    padding: 5px 10px;
+    border-radius: 5px;
+  }
+  
+ 
+  .button {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: black;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    font-size: 1.2rem;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  .button:hover {
+    background-color: #333;
+  }
+  form {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-top: 20px;
+  }
+  
+  input[type="text"],
+  input[type="number"],
+  input[type="email"] {
+    width: calc(33.33% - 20px);
+    padding: 10px;
+    margin: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 16px;
+  }
+  
+  input[type="text"]:focus,
+  input[type="number"]:focus,
+  input[type="email"]:focus {
+    outline: none;
+    border-color: black;
+  }
+  .detail{
+    text-align: center;
+    height: 10vh;
+  }
+  .detail1{
+    text-align: center;
+    font-size: 50px;
+  }
+  a[href="book.html"] button {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: black;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    font-size: 1.2rem;
+    text-decoration: none;
+  }
+  
+  a[href="book.html"] button:hover {
+    background-color: #333;
+  }
+  

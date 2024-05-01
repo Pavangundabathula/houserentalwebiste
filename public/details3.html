@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>House Rent Services</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="media.css">
+  <link rel="stylesheet" href="style2.css">
+  <style>
+    .list-item {
+      color: black;
+      font-size: 1.2rem;
+      font-weight: 500;
+      transition: opacity 100ms ease;
+    }
+
+    .logo {
+      font-weight: 600;
+      font-size: 1.5rem;
+      color: white;
+    }
+
+    .details-1 {
+      display: flex; 
+    }
+
+    .details-1 img {
+      width: 50%; 
+      object-fit: cover; 
+    }
+
+    .details-1 p {
+      width: 50%; 
+      padding: 1rem;
+      margin: 0; 
+    }
+
+    .details-1 p strong {
+      font-weight: bolder;
+    }
+
+    .details-1 p span {
+      display: block; 
+      background-color: black;
+      color: white;
+      padding: 5px 10px;
+      margin-bottom: 0px;
+    }
+
+    .details-1 p span.seller-details {
+      background-color: gray;
+    }
+    .button{
+      color:white;
+      background-color: black;
+    }
+  </style>
+</head>
+
+<body>
+  <nav class="navbar">
+    <div class="container">
+      <div class="logo">
+        <a href="index.html">FindURNest</a>
+      </div>
+      
+      <ul class="nav-list ">
+        <li><a href="login.html" class="list-item"></a></li>
+        <li><a href="form.html" class="list-item"></a></li>
+        <li><a href="#product" class="list-item"></a></li>
+        <li><a href="#header1" class="list-item "></a></li>
+        <li><a href="contactus.html" class="list-item contact " target="_blank">Contact us</a></li>
+    </ul>
+    </div>
+  </nav>
+  <br>
+  <br>
+  <br>
+
+  <div class="details-1">
+    <img src="house03.jpg">
+    <p>
+      <b>House Details:</b><br>
+      <span class="seller-details">Information about the House</span>
+      <span><b>Area:</b> 1200SqFt</span>
+      <span><b>Price:</b> 15,000 per month</span>
+      <span><b>Bedrooms:</b> 4</span>
+      <span><b>Bathrooms:</b> 1</span>
+      <span><b>Other:</b> Hall and Balcony</span>
+      <span><b>Location:</b> Soram colony, Palakkad,Andhra pradesh</span>
+      <span><b>Nearby to:</b> Hosipital,Market,Schools</span>
+      <b>Seller Details:</b><br>
+      <span class="seller-details">Information about the seller</span>
+      <span><b>Name:</b> Mr.Surya</span>
+      <span><b>Gmail:</b> surya6@gmail.com</span>
+      <span><b>Mobile number:</b>9847892501</span>
+      <span><b>location:</b> no.1-4-3, Subramaniya Sami 8th Street, Palakkad krishna- 600087, Andhra Pradesh, India</span>
+      <br>
+    </p>
+  </div>
+  <br><br><br>
+  <div class="detail1">
+    <b>To book an Appointment</b>
+  </div>
+  <form>
+    <input type="text" placeholder="Name">
+    <input type="number" id="number" placeholder="Mobile number">
+    <input type="email" id="email" placeholder="Email">
+</form>
+<br>
+<div class="detail">
+  <button onclick="function1()">Book now</button>
+</div>
+  <script src="app.js"></script>
+</body>
+
+</html>
